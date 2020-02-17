@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="EYI6aG" name="Stomoxys" displaySplashScreen="0" reportAppUsage="1"
+              splashScreenColour="Dark" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.qub.Stomoxys" includeBinaryInAppConfig="1"
+              cppLanguageStandard="11" companyCopyright="" buildVST="1" buildVST3="0"
+              buildAU="1" buildAUv3="0" buildRTAS="0" buildAAX="0" buildStandalone="1"
+              enableIAA="0" pluginName="Stomoxys" pluginDesc="Stomoxys" pluginManufacturer="Queen's"
+              pluginManufacturerCode="Qub" pluginCode="Eyi6" pluginChannelConfigs=""
+              pluginIsSynth="0" pluginWantsMidiIn="0" pluginProducesMidiOut="1"
+              pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0" pluginAUExportPrefix="StomoxysAU"
+              pluginRTASCategory="" aaxIdentifier="com.yourcompany.Bullshit"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="5.2.0"
+              headerPath="$HOME/SDKs/oscpkt&#10;$HOME/SDKs/sensel/sensel-lib/src&#10;$HOME/SDKs/vstsdk2.4"
+              pluginSilenceInIsSilenceOut="0">
+  <MAINGROUP id="D3NWd4" name="Stomoxys">
+    <GROUP id="{98257435-7F1C-E26F-F288-E476BF496DCE}" name="Source">
+      <FILE id="yg8jfL" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="TcTbj2" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="VlyeM0" name="DataAsAudio.cpp" compile="1" resource="0" file="Source/DataAsAudio.cpp"/>
+      <FILE id="GxIhJH" name="DataAsAudio.hpp" compile="0" resource="0" file="Source/DataAsAudio.hpp"/>
+      <FILE id="LGfVlA" name="OscReceiver.cpp" compile="1" resource="0" file="Source/OscReceiver.cpp"/>
+      <FILE id="X1mRPV" name="OscReceiver.h" compile="0" resource="0" file="Source/OscReceiver.h"/>
+      <FILE id="vfxWf9" name="OscSender.cpp" compile="1" resource="0" file="Source/OscSender.cpp"/>
+      <FILE id="ArTHoH" name="OscSender.h" compile="0" resource="0" file="Source/OscSender.h"/>
+      <FILE id="xLbIk8" name="SenselWrapper.cpp" compile="1" resource="0"
+            file="Source/SenselWrapper.cpp"/>
+      <FILE id="fqlktb" name="SenselWrapper.h" compile="0" resource="0" file="Source/SenselWrapper.h"/>
+      <FILE id="q1KMI1" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="XILuxR" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraLinkerFlags="-lsensel">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" enablePluginBinaryCopyStep="1" isDebug="1" optimisation="1"
+                       linkTimeOptimisation="0" targetName="Stomoxys" osxSDK="default"
+                       osxCompatibility="default" osxArchitecture="default" headerPath="&#10;"/>
+        <CONFIGURATION name="Release" enablePluginBinaryCopyStep="1" isDebug="0" optimisation="3"
+                       linkTimeOptimisation="1" targetName="Stomoxys" osxSDK="default"
+                       osxCompatibility="default" osxArchitecture="default" headerPath=""/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_events" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_video" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../SDKs/JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../SDKs/JUCE-5.2.0/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
